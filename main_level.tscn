@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw8kiemtexsbb"]
+
+[ext_resource type="PackedScene" uid="uid://b836f2nyyhcxk" path="res://player.tscn" id="1_gr6x6"]
+[ext_resource type="PackedScene" uid="uid://c20y7l457v688" path="res://spawn_point.tscn" id="3_bvm21"]
+
+[node name="MainLevel" type="Node2D" groups=["Level"]]
+
+[node name="Player" parent="." instance=ExtResource("1_gr6x6")]
+position = Vector2(572, 326)
+rotation = 0.0
+
+[node name="SpawnPoint" parent="." instance=ExtResource("3_bvm21")]
+position = Vector2(1184, -62)
+
+[node name="SpawnPoint2" parent="." instance=ExtResource("3_bvm21")]
+position = Vector2(1178, 680)
+
+[node name="SpawnPoint3" parent="." instance=ExtResource("3_bvm21")]
+position = Vector2(-61, 686)
+
+[node name="SpawnPoint4" parent="." instance=ExtResource("3_bvm21")]
+position = Vector2(-55, -57)

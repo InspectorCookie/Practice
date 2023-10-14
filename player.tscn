@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://b836f2nyyhcxk"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_fy5ta"]
+[ext_resource type="Texture2D" uid="uid://l6j5v8y7r77f" path="res://icon.svg" id="1_knp37"]
+[ext_resource type="PackedScene" uid="uid://53qgoecr608b" path="res://Projectile.tscn" id="2_j5ec4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k1lk1"]
+size = Vector2(128, 128)
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+rotation = 1.5708
+script = ExtResource("1_fy5ta")
+projectile = ExtResource("2_j5ec4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_knp37")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_k1lk1")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(114, -7.62939e-06)

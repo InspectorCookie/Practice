@@ -1,0 +1,8 @@
+res://main_level.tscn
+res://player.tscn
+res://player.gd
+res://Projectile.tscn
+res://Projectile.gd
+res://enemy.tscn
+res://enemy.gd
+res://GameManager.gd
