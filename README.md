@@ -1,2 +1,4 @@
 # TankGamePractice1
- practice!
+
+practice!
+This is a game created from a tutorial by "A Dev Named Josh" on YouTube.
